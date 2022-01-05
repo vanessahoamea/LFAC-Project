@@ -1,0 +1,48 @@
+#DEFINE @con 123.5
+int @b;
+
+struct @custom_type
+begin
+  int @val1;
+  float @val2;
+  bool @a_function(int @arg)
+  begin
+    /* ceva */
+  end;
+end;
+
+struct @another_type
+begin
+  bool @abool;
+end;
+
+int @haha(int @a, float @b)
+begin
+  string @hello := "hello";
+  char @F := 'F';
+  struct @custom_type @smth;
+  return @F;
+end;
+
+main
+struct @custom_type @test;
+@test.@val1 := @con;
+
+struct @another_type @alttest;
+@alttest.@abool := -3;
+
+@haha(1, 2.5);
+
+int @v[2] := 5;
+
+if(@con >= 100)
+begin
+  if(@con-10 >= 100)
+  begin
+    int @ok := @con-10;
+  end;
+end;
+
+Print("hmmm", @alttest.@abool+2);
+Print(@hello, -3+12*@b);
+int @helpp := 4;
